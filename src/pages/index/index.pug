@@ -1,0 +1,10 @@
+extends ../../app/pug/layout
+
+block title
+    | Главная
+
+block content
+    main(data-barba="container" data-barba-namespace="common" data-page-namespace="index")
+        +accordion({title: 'What is that?', text: 'Accordion'})
+            .text-block hello world
+            
